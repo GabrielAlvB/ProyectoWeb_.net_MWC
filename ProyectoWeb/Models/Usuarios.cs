@@ -5,6 +5,8 @@ using System.Web;
 
 //para hacer la conexion con la base de datos
 using System.Data.Entity;
+//se tiene que volver a instalar el package 
+//referencias>click derecho> manage nuget 
 
 namespace ProyectoWeb.Models
 {
