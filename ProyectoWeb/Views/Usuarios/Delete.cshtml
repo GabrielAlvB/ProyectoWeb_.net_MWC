@@ -1,0 +1,48 @@
+﻿@model ProyectoWeb.Models.Usuarios
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Usuarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Proveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Proveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.No_sirac)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.No_sirac)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
